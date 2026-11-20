@@ -1,6 +1,6 @@
 {
   "name": "claude-image-theme",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Turn a picture into a Claude theme mod: palette, colors and a vector backdrop",
   "scripts": {
     "generate": "node bin/generate.mjs"

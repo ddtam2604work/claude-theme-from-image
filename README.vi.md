@@ -10,7 +10,7 @@ Chỉ cần đưa vào một ảnh, công cụ sẽ:
 3. **Dùng ảnh làm hình nền.** Theme không nhúng được ảnh bitmap, nên ảnh được vẽ lại bằng vector sát với ảnh gốc: một lớp nền mượt (làm mờ) giữ các dải chuyển màu, và khoảng 5.000 ô nhỏ chỉ thêm chi tiết ở nơi ảnh có đường nét (hành tinh, bóng người, tinh vân). Các điểm sáng trong ảnh thành sao lấp lánh chậm.
 4. **Phủ một lớp mờ** lên ảnh (tối ở chế độ tối, sáng ở chế độ sáng) và **khung kính mờ** có viền sáng, để chữ trong khung chat luôn dễ đọc.
 5. **Kiểm tra độ tương phản** bằng chính bộ dựng màu của hệ thống thiết kế, tự chỉnh màu cho đến khi ứng dụng chấp nhận theme.
-6. **Thêm bảng điều chỉnh** để chỉnh trực tiếp: lớp phủ, kính mờ, độ nhòe, độ nét ảnh, màu nhấn, chế độ, sao, ảnh trôi và viền. Lựa chọn được lưu cho lần sau.
+6. **Thêm bảng điều chỉnh ngay trong Claude**, mở bằng nút Theme phía trên ô nhập: chọn ảnh khác bằng hộp thoại chọn file, chỉnh trực tiếp lớp phủ, kính mờ, độ nhòe, độ nét ảnh, màu nhấn, chế độ, sao, ảnh trôi và viền. Lựa chọn được lưu cho lần sau.
 
 Kết quả là một thư mục mod sẵn sàng nạp: bảng màu, khung chat, viền, nút và chữ đều theo ảnh của bạn, giống các theme không gian tự tạo trong Antigravity.
 
@@ -67,13 +67,17 @@ hoặc từ shell:
 claude plugin install image-theme-nebula --marketplace ddtam2604work/claude-theme-from-image
 ```
 
-## Bảng điều chỉnh
+## Bảng điều chỉnh ngay trong Claude
 
-Gõ lệnh của mod (ví dụ `/image-theme-space`) để mở bảng điều chỉnh bên cạnh khung chat:
+Mọi thứ làm được ngay trong ứng dụng, không cần dòng lệnh:
+
+- Nút **Theme** nằm phía trên ô nhập tin nhắn. Bấm vào để mở bảng điều chỉnh bên cạnh khung chat (hoặc gõ lệnh của mod, ví dụ `/image-theme-space`). Lần đầu theme được nạp, bảng sẽ tự mở.
+- **Chọn ảnh…** mở hộp thoại chọn file của hệ điều hành. Chọn ảnh `.jpg` hoặc `.png`, sau vài giây theme được tạo lại từ ảnh đó: bảng màu, màu sắc và hình nền mới. Cũng có thể dán đường dẫn ảnh vào ô bên dưới. **Ảnh gốc** quay về ảnh ban đầu của mod.
 
 | Mục | Tác dụng |
 | --- | --- |
 | Bật / Tắt | Bật hoặc tắt theme |
+| Chọn ảnh… / đường dẫn | Tạo lại theme từ ảnh khác (cần Node.js 18 trở lên trong PATH) |
 | Lớp phủ tối trên ảnh | Độ tối lớp phủ, 0–95 % (− / + mỗi bước 5 %) |
 | Lớp phủ sáng | Lớp phủ ở chế độ sáng |
 | Độ đục kính của khung | Khung kính mờ đặc hay trong |
@@ -82,6 +86,7 @@ Gõ lệnh của mod (ví dụ `/image-theme-space`) để mở bảng điều c
 | Màu nhấn | Theo ảnh, hoặc chọn một màu nổi bật trong ảnh |
 | Chế độ | Theo ứng dụng, luôn tối, hoặc luôn sáng |
 | Sao lấp lánh, Ảnh trôi chậm, Viền sáng | Bật / tắt |
+| Nút trên ô nhập | Hiện hoặc ẩn nút Theme (nút Ẩn bên cạnh cũng ẩn được) |
 | Mặc định | Trở về giá trị ban đầu |
 
 Thay đổi áp dụng ngay và được lưu cho các phiên sau. `/image-theme-space off` và `/image-theme-space on` tắt / bật theme ngay từ dấu nhắc.
