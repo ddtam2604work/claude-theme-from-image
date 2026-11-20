@@ -1,6 +1,7 @@
 {
   "name": "image-theme-nebula",
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "description": "Theme \"Nebula\" generated from a picture: palette, colors, a vector backdrop and a settings pane",
   "license": "MIT",
-  "description": "Theme \"Nebula\" generated from a picture: palette, colors and a vector backdrop"
+  "types": "./types/index.d.ts"
 }
