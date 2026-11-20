@@ -1,0 +1,12 @@
+{
+  "name": "claude-image-theme",
+  "description": "Theme mods generated from pictures with claude-image-theme",
+  "owner": { "name": "ddtam2604work" },
+  "plugins": [
+    {
+      "name": "image-theme-nebula",
+      "source": "./mods/image-theme-nebula",
+      "description": "Example theme generated from an original nebula picture"
+    }
+  ]
+}
